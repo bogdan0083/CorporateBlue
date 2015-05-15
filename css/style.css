@@ -1,0 +1,613 @@
+/*GENERAL*****************************************
+**************************************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fbfbfb;
+	color: #8f8f8f;
+	font-family: Tahoma, sans-serif;
+	font-size: 12px;
+	border-top: 5px solid #7e7e7e;
+	line-height: 1.4;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: #7e7e7e;
+}
+
+input[type="text"] {
+	background-color: #f3f3f3;
+	border: 1px solid #e7e7e7;
+	color: #b2b2b2;
+	padding: 10px;
+	height: 32px;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+.darker {
+	color: #525252;
+}
+p {
+	margin: 0 0 10px 0;	
+}
+img {
+	display: block;
+}
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+	margin: 0 0 20px 0;
+}
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER *****************************************
+**************************************************/
+
+header {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+/* HEADER: SEARCH *****************************************
+**************************************************/
+
+.search {
+	display: none;
+	float: right;
+	margin: 25px 10px 25px 0
+}
+.btn {
+	color: #fefefe;
+	background: #29c5e6;
+	border: none;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 13px;
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+	position: relative;
+	top:1px;
+}
+/* HEADER: LOGO *****************************************
+**************************************************/
+.logo {
+	margin: 25px auto;
+	width: 160px;
+}
+
+.logo a {
+	display: block;
+}
+
+.visited {
+	background-color: #29c5e6;
+	color: #fff;
+}
+/* HEADER: NAVIGATION *****************************************
+**************************************************/
+
+nav ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+nav a {
+	float: left;
+	width: 25%;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+	color: #b6b6b6;
+	font-weight: 300;
+	background-color: #f3f3f3;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	background-color: #29c5e6;
+	color: white;
+}
+
+/*MAIN-BANNER*****************************************
+**************************************************/
+
+.main-banner {
+	min-height: 200px;
+	background-color: #e2e2e2;
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+.main-banner h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	color: #5a5a5a;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.main-banner h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: #b0b0b0;
+	margin: -10px 0 0 0;
+}
+
+
+/*BANNER-NAVIGATION*****************************************
+**************************************************/
+
+.banner-nav {
+	margin: 0 0 15px 0;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid  #e7e7e7;
+	min-height: 50px;
+	list-style: none;
+	text-transform: uppercase;
+	padding: 15px;
+}
+.banner-nav > li {
+	margin-bottom: 15px;
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	color: #8f8f8f;
+	font-size: 13px;
+	width: 100%;
+}
+ol > li:last-child {
+	margin-bottom: 0px;
+}
+
+.counter {
+	counter-reset:li;
+}
+.banner-nav li:before {
+	content: counter(li);
+	counter-increment: li;
+	display: inline-block;
+	width: 20px;
+	background-color: #8f8f8f;
+	color: #fff;
+	padding: 2px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+/*MAIN CONTENT: COLUMNS*****************************************
+**************************************************/
+
+.col {
+	padding: 10px;
+}
+
+.col:last-child {
+	margin-bottom: 50px;
+}
+.col h3 {
+	margin-bottom: 10px;
+	background-image: url("../img/pattern.png");
+	background-origin: padding-box;
+	background-color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	}
+.col img {
+	float: left;
+	display: block;
+	width: 140px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #c9c9c9;
+	padding: 1px;
+}
+
+.col span {
+	display: inline-block;
+	padding-right: 15px;
+	background: #fff;
+}
+
+.col span:before {
+	content: " ";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: #29c5e6;
+	position: relative;
+	top:1px;
+	margin-right: 5px;
+}
+.col p:last-child {
+	margin-bottom: 0px;
+}
+
+/*COLUMN: OUR TEAM*****************************************
+**************************************************/
+
+.team-row {
+	margin-bottom: 10px;
+}
+.team-row > img {
+	background-image: url('../img/color-bg.png');
+	width: 41px;
+	padding: 1px;
+	border: 1px solid #c9c9c9;
+	float: left;
+	margin-top: 2px;
+}
+.team-row > p {
+	font-size: 11px;
+	margin: 0;
+}
+.team-row > h4 {
+	font: 300 11px verdana;
+	margin-bottom: 2px;
+	text-transform: uppercase;
+	color: #525252;
+}
+.team-row:last-child {
+	margin-bottom: 0px;
+}
+.team-row img:last-child {
+	margin-bottom: 0px;
+}
+
+/*COLUMN: OUR-CLIENTS*****************************************
+**************************************************/
+
+.logo-container {
+	width: 100%;
+	margin: 0 auto;
+}
+.logo-container img {
+	display: inline-block;
+	margin-left: 1.8%;
+	max-width: 15%;
+	border: none;
+	float: none;
+	margin-right: 0;
+}
+.logo-container .w_200 {
+	max-width: 37.5%;
+	margin-left: 0;
+}
+.logo-container .w_110 {
+	max-width: 20%;
+}
+.logo-container img:first-child {
+	margin-left: 0;
+}
+
+
+
+/*FOOTER*****************************************
+**************************************************/
+
+footer {
+	background-color: #7e7e7e;
+	padding:15px;
+	width: 100%;
+}
+.footer > div {
+	margin-bottom: 10px;
+}
+/*FOOTER: TWITTER-FEED*****************************************
+**************************************************/
+
+.twitter-feed {
+	width: 300px;
+	float: left;
+	display: none;
+}
+.twitter-feed h3 {
+	font: 300 14px 'Oswald', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #919191;
+	margin-bottom: 9px;
+}
+.twitter-feed time a {
+	color: #b1abab;
+}
+.twitter-feed {
+	color: #b1abab;
+	padding-bottom: 1px;
+}
+.twitter-feed > p {
+	color: #dbdbdb;
+	padding-right: 15px;
+	margin-bottom: 0;
+}
+/*FOOTER: SOCIAL-ICONS*****************************************
+**************************************************/
+
+.social-icons h3 {
+	font: 300 14px 'Oswald', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #919191;
+	margin-bottom: 11px;
+}
+.social-icons {
+	margin: 0 auto;
+	width: 130px;
+
+}
+
+.social-icon {
+	width: 30px;
+	height: 31px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+
+.social-icon-small {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 7px;
+}
+
+.twitter {
+	background: url('../img/social-icons.png') no-repeat 0 0;
+	width: 30px;
+	height: 31px;
+}
+.facebook {
+	background: url('../img/social-icons.png') no-repeat -40px 0;
+	width: 30px;
+	height: 31px;
+}
+.google-plus {
+	background: url('../img/social-icons.png') no-repeat -80px 0;
+	width: 30px;
+	height: 31px;
+}
+.vimeo {
+	background: url('../img/social-icons.png') no-repeat 0 -38px;
+	width: 16px;
+	height: 16px;
+}
+.youtube {
+	background: url('../img/social-icons.png') no-repeat -24px -38px;
+	width: 16px;
+	height: 16px;
+}
+.flickr {
+	background: url('../img/social-icons.png') no-repeat -47px -38px;
+	width: 16px;
+	height: 16px;
+}
+.instagram {
+	background: url('../img/social-icons.png') no-repeat -71px -38px;
+	width: 16px;
+	height: 16px;
+}
+.rss {
+	background: url('../img/social-icons.png') no-repeat -94px -38px;
+	width: 16px;
+	height: 16px;
+}
+
+/*FOOTER: LOGO AND COPYRIGHT*****************************************
+**************************************************/
+.logo-and-copy {
+	text-align: center;
+}
+.logo-and-copy p {
+	margin: 0;
+	color: #fff;
+	font-size: 10px;
+}
+.logo-and-copy span {
+	text-decoration: underline;
+}
+
+.logo-and-copy img {
+	display: none;
+}
+
+/*FOOTER: SITEMAP*****************************************
+**************************************************/
+
+.sitemap {
+	width: 130px;
+	display: none;
+}
+.sitemap h3 {
+	font: 300 14px 'Oswald', sans-serif;
+	color: #fff;
+	text-transform: uppercase;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #919191;
+	margin-bottom: 11px;
+}
+
+.sitemap a {
+	width: 50%;
+	color: #dbdbdb;
+	float: left;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+/*MEDIA QUERIES*****************************************
+**************************************************/
+
+@media (min-width: 400px) {
+	.banner-nav {
+		padding: 15px 15px 0 15px;
+	}
+	.banner-nav > li {
+		width: 49%;
+	}
+}
+
+@media (min-width: 550px) {
+	.logo {
+		float: left;
+		margin-left: 10px;
+	}
+	nav {
+		clear: both;
+	}
+	.search {
+		display: block;
+	}
+	.logo-container img {
+		max-width: 9.2%;
+		margin-left: 3%;
+	}
+	.logo-container .w_200 {
+	max-width: 200px;
+	width: 22%;
+	}
+	.logo-container .w_110 {
+		max-width: 12%;
+	}
+}
+
+
+@media (min-width: 600px) {
+	.services,
+	.our-teams {
+		float: left;
+		width: 50%;
+	}
+
+	.support {
+		clear: both;
+	}
+	.social-icons {
+		float: left;
+	}
+	.logo-and-copy {
+		float: right;
+	}
+	.logo-and-copy img {
+		width: 160px;
+		display: block;
+		float: right;
+		margin-top: 15px;
+		margin-bottom: 20px;
+	}
+	.logo-and-copy p {
+		clear: both;
+	}
+}
+
+@media (min-width: 700px) {
+	.main-banner {
+		height: 280px;
+	}
+	.main-banner h1 {
+		font-size: 42px;
+	}
+	.banner-nav li {
+		width: 24%;
+	}
+	.twitter-feed {
+		display: block;
+		float: left;
+		width: 200px;
+	}
+	.footer > div {
+		margin-right: 20px;
+	}
+}
+
+@media (min-width: 810px) {
+	nav a {
+		width: 12.5%;
+	}
+
+	.footer > div {
+		margin-bottom: 0;
+		}
+
+	.about,
+	.ceo { 
+		width: 50%;
+		float: left;
+	}
+
+	.banner-nav li {
+		font-size: 16px;
+	}
+	.sitemap {
+		display: block;
+		float: left;
+	}
+}
+
+@media (min-width: 910px) {
+
+	.twitter-feed {
+		width: 300px;
+	}
+
+	.services,
+	.our-teams,
+	.support {
+		width: 33.3333%;
+		float: left;
+	}
+
+	.support {
+		clear: none;
+	}
+
+	.our-clients {
+		clear: both;
+	}
+
+}
+@media (min-width: 960px) {
+	.wrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	.banner-nav li {
+		font-size: 18px;
+	}
+
+	.footer {
+		width: 960px;
+		margin: 0 auto;
+		padding: 0 10px;
+	}
+
+}
+/*CLEARFIX*****************************************
+**************************************************/
+
